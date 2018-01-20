@@ -20,7 +20,8 @@ include vendor/nexus/configs/version.mk
 
 # Telephony packages
 PRODUCT_PACKAGES += \
-    Stk
+    Stk \
+    CellBroadcastReceiver
 
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \

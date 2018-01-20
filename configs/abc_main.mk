@@ -29,3 +29,6 @@ PRODUCT_PACKAGES += \
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     librsjni
+
+# Inherit prebuilt apps
+$(call inherit-product-if-exists, vendor/gapps/prebuilt.mk)

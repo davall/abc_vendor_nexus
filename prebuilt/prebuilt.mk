@@ -13,7 +13,4 @@
 # limitations under the License.
 
 # Prebuilt Packages
-PRODUCT_PACKAGES += \
-    WallpaperPickerGooglePrebuilt \
-    Turbo \
-    PrebuiltDeskClockGoogle
+
