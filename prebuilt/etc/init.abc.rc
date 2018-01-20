@@ -1,5 +1,8 @@
 # ABC Extras
 
+on init
+    export PATH /sbin:/vendor/bin:/system/sbin:/system/bin:/system/xbin:/data/local/tmp
+
 on boot
     start sysinit
 
@@ -17,5 +20,19 @@ on property:service.adb.tcp.port=-1
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
+    seclabel u:r:init:s0
     oneshot
     disabled
+
+on post-fs-data
+    # Run sysinit
+    start sysinit
+
+# adb over network
+on property:service.adb.tcp.port=5555
+    stop adbd
+    start adbd
+
+on property:service.adb.tcp.port=-1
+    stop adbd
+    start adbd
