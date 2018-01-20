@@ -19,7 +19,7 @@ include vendor/nexus/configs/abc_phone.mk
 # Inherit AOSP device configuration for  taimen
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
-$(call inherit-product, vendor/pixelgapps/gapps.mk)
+$(call inherit-product, vendor/gapps/gapps.mk)
 
 # Override AOSP build properties
 PRODUCT_NAME := taimen
