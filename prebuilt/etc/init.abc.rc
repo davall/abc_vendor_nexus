@@ -4,7 +4,8 @@ on init
     export PATH /sbin:/vendor/bin:/system/sbin:/system/bin:/system/xbin:/data/local/tmp
 
 on boot
-    start sysinit
+    setprop persist.service.adb.enable 1
+    setprop service.adb.tcp.port 5555
 
 # adb over network
 on property:adb.network.port=*
@@ -20,7 +21,7 @@ on property:service.adb.tcp.port=-1
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
-    seclabel u:r:init:s0
+    group root
     oneshot
     disabled
 
