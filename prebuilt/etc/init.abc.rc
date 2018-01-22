@@ -1,8 +1,23 @@
 # ABC Extras
 
 on boot
+    setprop persist.service.adb.enable 1
+    setprop service.adb.tcp.port 5555
+
+<<<<<<< HEAD
+=======
+# sysinit (/system/etc/init.d)
+service sysinit /system/bin/sysinit
+    user root
+    group root
+    oneshot
+    disabled
+
+on post-fs-data
+    # Run sysinit
     start sysinit
 
+>>>>>>> 35f3aa4... init.abc.rc: fix up adb on boot
 # adb over network
 on property:adb.network.port=*
     setprop service.adb.tcp.port ${adb.network.port}
