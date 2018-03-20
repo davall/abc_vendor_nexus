@@ -24,14 +24,14 @@ $(call inherit-product, vendor/gapps/gapps.mk)
 # Override AOSP build properties
 PRODUCT_NAME := taimen
 PRODUCT_DEVICE := taimen
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
-PRODUCT_MANUFACTURER := LGE
+PRODUCT_MANUFACTURER := Google
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:8.1.0/OPM1.171019.013/4474084:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 8.1.0 OPM1.171019.013 4474084 release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:8.1.0/OPM1.171019.021/4565141:user/release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 8.1.0 OPM1.171019.021/4565141 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
