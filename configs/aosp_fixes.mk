@@ -15,7 +15,6 @@
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
-    ro.control_privapp_permissions=enforce \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
@@ -26,9 +25,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.config.notification_sound=Chime.ogg \
     ro.config.alarm_alert=Flow.ogg \
-    ro.config.ringtone=Zen.ogg
-    ro.carrier=unknown
+    ro.config.ringtone=Zen.ogg 
 
+    # ro.control_privapp_permissions=enforce \
+    # ro.carrier=unknown
+#
 # Proprietary latinime libs needed for Keyboard swyping
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
