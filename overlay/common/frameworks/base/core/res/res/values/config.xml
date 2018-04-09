@@ -73,9 +73,6 @@
     <string name="config_appsAuthorizedForSharedAccounts">;com.android.vending;com.android.settings;</string>
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
 
-    <!-- default dnd acess packages -->
-    <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera</string>
-
     <!-- empheral resolver packages -->
     <string-array name="config_ephemeralResolverPackage">
         <item>com.google.android.gms</item>
