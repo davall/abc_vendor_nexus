@@ -12,11 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#PureNexus versioning
-ifndef PURE_BUILD_TYPE
-    PURE_BUILD_TYPE := HOMEMADE
-endif
-
 ABC_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \

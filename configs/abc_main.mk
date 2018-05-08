@@ -21,11 +21,6 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapersPicker
 
-# Custom Packages
-#PRODUCT_PACKAGES += \
-    #Busybox
-    #ThemeInterfacer
-
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     librsjni
