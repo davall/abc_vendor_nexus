@@ -17,13 +17,9 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
 
-# ABC-specific init file
-# Skip if project treble, for those devices use the specific
-# init.rc in the device tree
-ifneq (true,$(PRODUCT_FULL_TREBLE))
-    PRODUCT_COPY_FILES += \
+# Pure-specific init file
+PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/init.abc.rc:root/init.abc.rc
-endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
