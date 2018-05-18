@@ -17,9 +17,9 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
 
-# Pure-specific init file
+# ABC custom init file
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/init.abc.rc:root/init.abc.rc
+    vendor/nexus/prebuilt/etc/init.abc.rc:system/etc/init/init.abc.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
