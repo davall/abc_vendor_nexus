@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     YellowAccent \
     WhiteAccent
 
+# Analog clocks
+PRODUCT_PACKAGES += \
+    DeepNightClock
+
 # Disable Rescue Party
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=true
