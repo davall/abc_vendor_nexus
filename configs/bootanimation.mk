@@ -19,5 +19,5 @@ ifneq ($(filter angler,$(TARGET_PRODUCT)),)
 endif
 ifneq ($(filter taimen,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/taimen.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1080-abc-bootani.zip:system/media/bootanimation.zip
 endif
