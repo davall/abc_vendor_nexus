@@ -53,4 +53,4 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Get some sounds
-$(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/pixel/PixelAudio.mk)
