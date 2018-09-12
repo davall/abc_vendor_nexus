@@ -18,8 +18,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Main Required Packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
-    LiveWallpapersPicker
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
