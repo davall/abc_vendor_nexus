@@ -21,13 +21,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
     ro.error.receiver.system.apps=com.google.android.gms \
-    ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dataroaming=false \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.setupwizard.rotation_locked=true \
     ro.config.notification_sound=Chime.ogg \
     ro.config.alarm_alert=Flow.ogg \
-    ro.config.ringtone=Zen.ogg 
+    ro.config.ringtone=Zen.ogg \
+    esim.enable_esim_system_ui_by_default=false \
+    ro.opa.eligible_device=true \
+    setupwizard.feature.baseline_setupwizard_enabled=true \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.setupwizard.rotation_locked=true \
+    setupwizard.enable_assist_gesture_training=true \
+    ro.setupwizard.esim_cid_ignore=00000001 \
+    setupwizard.theme=glif_v3_light \
+    ro.carrier=unknown
 
     # ro.carrier=unknown
 #
