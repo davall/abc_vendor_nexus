@@ -19,6 +19,8 @@ include vendor/nexus/configs/abc_phone.mk
 # Inherit AOSP device configuration for  taimen
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
+-include device/google/taimen/device-abc.mk
+
 $(call inherit-product, vendor/gapps/gapps.mk)
 
 # Override AOSP build properties
@@ -32,7 +34,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:9/PPR2.180905.005/4928864:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 9 PPR2.180905.005 4928864 release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:9/PPR2.181005.003/4984323:user/release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 9 PPR2.181005.003 4984323 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
